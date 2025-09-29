@@ -37,9 +37,9 @@ jobs:
           username: akash7501
           password: Akash@7501
 
-      # 6️⃣ Build Docker image
       - name: Build Docker image
-        run: docker build -t akash7501/todoapp:latest -f ToDoApp/ToDoApp/Dockerfile .
+        run: docker build -t akash7501/todoapp:latest .
+
 
 
       # 7️⃣ Push Docker image to Docker Hub
