@@ -35,8 +35,8 @@ jobs:
 
       # 5️⃣ Build Docker image
       - name: Build Docker image
-        run: docker build -t myusername/todoapp:latest .
+        run: docker build -t akash7501/todoapp:latest .
 
       # 6️⃣ Push Docker image to Docker Hub
       - name: Push Docker image
-        run: docker push myusername/todoapp:latest
+        run: docker push akash7501/todoapp:latest
