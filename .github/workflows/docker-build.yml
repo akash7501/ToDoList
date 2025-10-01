@@ -41,7 +41,7 @@ jobs:
       # 6️⃣ Login to AWS ECR
       - name: Login to Amazon ECR
         run: |
-          docker login --username AWS --password-stdin ${{ secrets.ECR_REPOSITORY }}
+          docker login --username AWS --password-stdin 735062615445.dkr.ecr.ap-south-1.amazonaws.com
       
 
       # 7️⃣ Build Docker image
@@ -50,10 +50,10 @@ jobs:
 
       # 8️⃣ Tag Docker image for ECR
       - name: Tag Docker image for ECR
-        run: docker tag todoapp:latest ${{ secrets.ECR_REPOSITORY }}:latest
+        run: docker tag todoapp:latest 735062615445.dkr.ecr.ap-south-1.amazonaws.com/todoapp:latest
 
 
       # 9️⃣ Push Docker image to ECR
       - name: Push Docker image to ECR
-        run: docker push ${{ secrets.ECR_REPOSITORY }}:latest
+        run: docker push 735062615445.dkr.ecr.ap-south-1.amazonaws.com/todoapp:latest
 

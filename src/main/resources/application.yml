@@ -3,7 +3,7 @@ spring:
     name: ToDoApp
 
   datasource:
-    url: jdbc:postgresql://mypostgres:5432/DemoTesting
+    url: jdbc:postgresql://localhost:5432/DemoTesting
     username: postgres
     password: root
     driver-class-name: org.postgresql.Driver
